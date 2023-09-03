@@ -1,7 +1,5 @@
 from transformers import ViltProcessor, ViltForQuestionAnswering
 from PIL import Image
-import os
-os.environ['TRANSFORMERS_CACHE'] = './.cache'
 
 # 470MB
 processor = ViltProcessor.from_pretrained("dandelin/vilt-b32-finetuned-vqa")
